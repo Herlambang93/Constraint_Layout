@@ -28,24 +28,29 @@ public class MainActivity extends AppCompatActivity {
                 Name = editTextTextPersonName.getText().toString();
                 Password = editTextTextPersonName2.getText().toString();
 
+                if(Name.equals("lams@gmail.com") && Password.equals("wek")) {
+                    Toast t = Toast.makeText(getApplicationContext(),
+                            "email dan password benar", Toast.LENGTH_LONG);
+                    t.show();
 
 
-                Toast t = Toast.makeText(getApplicationContext(),
-                        "email anda" + Name + "dan password anda:" +Password+"",Toast.LENGTH_LONG);
-                t.show();
-
-            }
-            public boolean validasiData(){
-                String emailActive = "Lams@gmail.com";
-                String passActive = "Wek";
-
-                if(emailActive.equals(editTextTextPersonName.getText().toString()) && passActive.equals(editTextTextPersonName2.getText().toString())){
-                    return true;
                 }
-                return false;
+                else if(!Name.equals("lams@gmail.com") && Password.equals("wek")) {
+                    Toast t = Toast.makeText(getApplicationContext(),
+                            "email salah", Toast.LENGTH_LONG);
+                    t.show();
+                }
+                else if(Name.equals("lams@gmail.com") && !Password.equals("wek")) {
+                    Toast t = Toast.makeText(getApplicationContext(),
+                            "password salah", Toast.LENGTH_LONG);
+                    t.show();
+                }
+                else {
+                    Toast t = Toast.makeText(getApplicationContext(),
+                            "email dan password salah", Toast.LENGTH_LONG);
+                    t.show();
+                }
             }
-
         });
-
     }
 }
