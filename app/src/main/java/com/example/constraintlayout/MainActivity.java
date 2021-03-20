@@ -2,6 +2,7 @@ package com.example.constraintlayout;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -34,6 +35,14 @@ public class MainActivity extends AppCompatActivity {
                     t.show();
 
 
+                    Bundle bl = new Bundle();
+                    bl.putString("parameter", Name.trim());
+                    bl.putString("parameter2", Password.trim());
+
+                    Intent IntBaru = new Intent(MainActivity.this, Act2.class);
+                    IntBaru.putExtras(bl);
+
+                    startActivity(IntBaru);
                 }
                 else if(!Name.equals("lams@gmail.com") && Password.equals("wek")) {
                     Toast t = Toast.makeText(getApplicationContext(),
