@@ -80,7 +80,7 @@ public class MainActivity extends AppCompatActivity {
         //membuat kondisi jika yang dipilih adalah id mnDaftar
         if (item.getItemId() == R.id.mnDaftar)
         {
-            Intent i = new Intent(getApplicationContext(), Daftar.class);
+            Intent i = new Intent(getApplicationContext(), menu1.class);
             startActivity(i);
         }
 

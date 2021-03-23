@@ -15,7 +15,7 @@ import com.google.android.material.snackbar.Snackbar;
 
 
 
-public class Daftar extends AppCompatActivity {
+public class menu1 extends AppCompatActivity {
     //Deklarasi variabel dengan tipe data EditText
     EditText edtNama, edtAlamat, edtEmail, edtPassword, edtrepass;
     FloatingActionButton fab;
