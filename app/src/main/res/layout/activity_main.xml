@@ -31,7 +31,7 @@
         android:ems="10"
         android:hint="@string/tEmail"
         android:inputType="textPersonName"
-        android:text="Name"
+        android:text=""
         android:padding="12dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintHorizontal_bias="0.502"
