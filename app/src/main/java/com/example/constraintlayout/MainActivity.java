@@ -42,7 +42,7 @@ public class MainActivity extends AppCompatActivity {
                     bl.putString("parameter", Name.trim());
                     bl.putString("parameter2", Password.trim());
 
-                    Intent IntBaru = new Intent(MainActivity.this, Act2.class);
+                    Intent IntBaru = new Intent(MainActivity.this, Home_Act.class);
                     IntBaru.putExtras(bl);
 
                     startActivity(IntBaru);
